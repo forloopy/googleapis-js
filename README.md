@@ -24,14 +24,19 @@ npm install @forloopy/googleapis
 
 Here’s a basic example of how to use googleapis with the ES module import syntax:
 
+### Import & Initiate 
+
 ```javascript
 // Initiate
 import GoogleAPIs from '@forloopy/googleapis';
 const googleapis = new GoogleAPIs({
 	serviceAccount: '<GOOGLE_SERVICE_ACCOUNT>'
 });
+```
 
-// Add user
+### Add Drive User
+
+```javascript
 const { data, error } = await googleapis.drive.addUser({
  	role: 'reader',
  	email: '<EMAIL_ADDRESS>',
@@ -43,8 +48,11 @@ const { data, error } = await googleapis.drive.addUser({
  else {
  	console.log( error )	
 }
+```
 
-// Remove user
+### Remove Drive user
+
+```javascript
 const { data, error } = await googleapis.drive.removeUser({
  	email: '<EMAIL_ADDRESS>',
  	target: '<FILE_OR_FOLDER_ID>'

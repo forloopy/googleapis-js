@@ -1,15 +1,26 @@
 {
-  "name": "@forloopy/googleapis",
-  "version": "1.0.0",
-  "description": "",
+"name": "@forloopy/googleapis",
+  "version": "1.0.1",
+  "description": "A Node.js library for interacting with the Google API.",
+  "homepage": "https://github.com/forloopy/googleapis-js#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forloopy/googleapis-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/forloopy/googleapis-js/issues"
+  },
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": ["dist"],
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["googleapi", "google", "api", "nodejs", "integration"],
+  "author": "@forloopy",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^22.7.4",

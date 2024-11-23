@@ -24,6 +24,7 @@ export default class Google_Drive {
 		}
 	): Promise <object> => {
 		const auth = await this.authorize();
+		// Debug
 		// console.log( auth );
 		try {
 			const drive = google.drive({ version: 'v3', auth });

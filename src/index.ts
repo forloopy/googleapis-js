@@ -1,8 +1,8 @@
 import { google } from 'googleapis';
 
-import Google_Drive from './classes/drive';
+import Google_Drive from './classes/drive.js';
 
-export default class GoogleX {
+export default class GoogleAPIs {
 
 	serviceAccount: string = '';
 	serviceAccountJson: {};
